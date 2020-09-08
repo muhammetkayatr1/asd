@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Haliç Üniversitesi Öğrenci Numarası Sorgulama Ekranı</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Views/Shared/images/haliclogoyeni.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Views/Shared/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('images/halic.jpg');">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-logo">
+                        <img style="width: 150px" src="images/haliclogoyeni.png">
+                    </span>
+
+                    <span class="login100-form-title p-b-34 p-t-27">
+                        Öğrenci Numarası Sorgulama Ekranı
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="TC numarası giriniz">
+                        <input class="input100" type="text" name="tc" placeholder="T.C Kimlik No Giriniz." maxlength="11">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                    </div>
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Sorgula
+                        </button>
+                    </div>
+                    <div style="overflow-x:auto;" class="p-t-20 table-desing">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="6" style="text-align: center;">Öğrenci Bilgileri</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" rowspan="2"><img src="images/icons/favicon.ico"></th>
+                                    <th scope="row">Öğrenci No</th>
+                                    <th scope="row">İsim Soyisim</th>
+                                    <th scope="row">Fakülte</th>
+                                    <th scope="row">Bölüm</th>
+                                </tr>
+                                <tr>
+                                    <td>Öğrenci No</td>
+                                    <td>İsim Soyisim</td>
+                                    <td>Fakülte</td>
+                                    <td>Bölüm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <p class="txt1">
+                            <br>Aramalarınızı T.C. Kimlik numaranız ile yapınız.
+                            <br><br>Öğrenci bilgi sistemine giriş yapabilmeniz için "Öğrenci Numarasına" ihtiyaç duyulmaktadır.
+                            <br><br>Birden fazla bölümde kaydınız çıkabilir. Mezun olduğunuz veya ÇAP/Yandal gibi bölümlerinize ait öğrenci numaralarınızda listelenmektedir.
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Views/Shared/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/Views/Shared/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Views/Shared/js/main.js"></script>
+
+</body>
+</html>
